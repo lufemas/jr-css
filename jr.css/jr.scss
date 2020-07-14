@@ -214,7 +214,7 @@ $breakpoints: (s: 0px, m: 720px, l: 1024px);
         $label: $i*5;
       }
 
-      .jr.flex-row .jr.col-#{$label} {width: math.floor(($i*5%/1.2)*math.pow(10,5))/math.pow(10,5);}
+      .jr.flex#{$mod}-row .jr.col#{$mod}-#{$label} {width: math.floor(($i*5%/1.2)*math.pow(10,5))/math.pow(10,5);}
     }    
     
     .jr.card#{$mod}{

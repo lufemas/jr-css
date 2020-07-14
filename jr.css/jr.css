@@ -1130,99 +1130,99 @@ input.jr + small.jr {
     flex-grow: 12;
   }
 
-  .jr.flex-row .jr.col-05 {
+  .jr.flex-m-row .jr.col-m-05 {
     width: 4.16666%;
   }
 
-  .jr.flex-row .jr.col-1 {
+  .jr.flex-m-row .jr.col-m-1 {
     width: 8.33333%;
   }
 
-  .jr.flex-row .jr.col-15 {
+  .jr.flex-m-row .jr.col-m-15 {
     width: 12.5%;
   }
 
-  .jr.flex-row .jr.col-2 {
+  .jr.flex-m-row .jr.col-m-2 {
     width: 16.66666%;
   }
 
-  .jr.flex-row .jr.col-25 {
+  .jr.flex-m-row .jr.col-m-25 {
     width: 20.83333%;
   }
 
-  .jr.flex-row .jr.col-3 {
+  .jr.flex-m-row .jr.col-m-3 {
     width: 25%;
   }
 
-  .jr.flex-row .jr.col-35 {
+  .jr.flex-m-row .jr.col-m-35 {
     width: 29.16666%;
   }
 
-  .jr.flex-row .jr.col-4 {
+  .jr.flex-m-row .jr.col-m-4 {
     width: 33.33333%;
   }
 
-  .jr.flex-row .jr.col-45 {
+  .jr.flex-m-row .jr.col-m-45 {
     width: 37.5%;
   }
 
-  .jr.flex-row .jr.col-5 {
+  .jr.flex-m-row .jr.col-m-5 {
     width: 41.66666%;
   }
 
-  .jr.flex-row .jr.col-55 {
+  .jr.flex-m-row .jr.col-m-55 {
     width: 45.83333%;
   }
 
-  .jr.flex-row .jr.col-6 {
+  .jr.flex-m-row .jr.col-m-6 {
     width: 50%;
   }
 
-  .jr.flex-row .jr.col-65 {
+  .jr.flex-m-row .jr.col-m-65 {
     width: 54.16666%;
   }
 
-  .jr.flex-row .jr.col-7 {
+  .jr.flex-m-row .jr.col-m-7 {
     width: 58.33333%;
   }
 
-  .jr.flex-row .jr.col-75 {
+  .jr.flex-m-row .jr.col-m-75 {
     width: 62.5%;
   }
 
-  .jr.flex-row .jr.col-8 {
+  .jr.flex-m-row .jr.col-m-8 {
     width: 66.66666%;
   }
 
-  .jr.flex-row .jr.col-85 {
+  .jr.flex-m-row .jr.col-m-85 {
     width: 70.83333%;
   }
 
-  .jr.flex-row .jr.col-9 {
+  .jr.flex-m-row .jr.col-m-9 {
     width: 75%;
   }
 
-  .jr.flex-row .jr.col-95 {
+  .jr.flex-m-row .jr.col-m-95 {
     width: 79.16666%;
   }
 
-  .jr.flex-row .jr.col-10 {
+  .jr.flex-m-row .jr.col-m-10 {
     width: 83.33333%;
   }
 
-  .jr.flex-row .jr.col-105 {
+  .jr.flex-m-row .jr.col-m-105 {
     width: 87.5%;
   }
 
-  .jr.flex-row .jr.col-11 {
+  .jr.flex-m-row .jr.col-m-11 {
     width: 91.66666%;
   }
 
-  .jr.flex-row .jr.col-115 {
+  .jr.flex-m-row .jr.col-m-115 {
     width: 95.83333%;
   }
 
-  .jr.flex-row .jr.col-12 {
+  .jr.flex-m-row .jr.col-m-12 {
     width: 100%;
   }
 
@@ -1870,99 +1870,99 @@ input.jr + small.jr {
     flex-grow: 12;
   }
 
-  .jr.flex-row .jr.col-05 {
+  .jr.flex-l-row .jr.col-l-05 {
     width: 4.16666%;
   }
 
-  .jr.flex-row .jr.col-1 {
+  .jr.flex-l-row .jr.col-l-1 {
     width: 8.33333%;
   }
 
-  .jr.flex-row .jr.col-15 {
+  .jr.flex-l-row .jr.col-l-15 {
     width: 12.5%;
   }
 
-  .jr.flex-row .jr.col-2 {
+  .jr.flex-l-row .jr.col-l-2 {
     width: 16.66666%;
   }
 
-  .jr.flex-row .jr.col-25 {
+  .jr.flex-l-row .jr.col-l-25 {
     width: 20.83333%;
   }
 
-  .jr.flex-row .jr.col-3 {
+  .jr.flex-l-row .jr.col-l-3 {
     width: 25%;
   }
 
-  .jr.flex-row .jr.col-35 {
+  .jr.flex-l-row .jr.col-l-35 {
     width: 29.16666%;
   }
 
-  .jr.flex-row .jr.col-4 {
+  .jr.flex-l-row .jr.col-l-4 {
     width: 33.33333%;
   }
 
-  .jr.flex-row .jr.col-45 {
+  .jr.flex-l-row .jr.col-l-45 {
     width: 37.5%;
   }
 
-  .jr.flex-row .jr.col-5 {
+  .jr.flex-l-row .jr.col-l-5 {
     width: 41.66666%;
   }
 
-  .jr.flex-row .jr.col-55 {
+  .jr.flex-l-row .jr.col-l-55 {
     width: 45.83333%;
   }
 
-  .jr.flex-row .jr.col-6 {
+  .jr.flex-l-row .jr.col-l-6 {
     width: 50%;
   }
 
-  .jr.flex-row .jr.col-65 {
+  .jr.flex-l-row .jr.col-l-65 {
     width: 54.16666%;
   }
 
-  .jr.flex-row .jr.col-7 {
+  .jr.flex-l-row .jr.col-l-7 {
     width: 58.33333%;
   }
 
-  .jr.flex-row .jr.col-75 {
+  .jr.flex-l-row .jr.col-l-75 {
     width: 62.5%;
   }
 
-  .jr.flex-row .jr.col-8 {
+  .jr.flex-l-row .jr.col-l-8 {
     width: 66.66666%;
   }
 
-  .jr.flex-row .jr.col-85 {
+  .jr.flex-l-row .jr.col-l-85 {
     width: 70.83333%;
   }
 
-  .jr.flex-row .jr.col-9 {
+  .jr.flex-l-row .jr.col-l-9 {
     width: 75%;
   }
 
-  .jr.flex-row .jr.col-95 {
+  .jr.flex-l-row .jr.col-l-95 {
     width: 79.16666%;
   }
 
-  .jr.flex-row .jr.col-10 {
+  .jr.flex-l-row .jr.col-l-10 {
     width: 83.33333%;
   }
 
-  .jr.flex-row .jr.col-105 {
+  .jr.flex-l-row .jr.col-l-105 {
     width: 87.5%;
   }
 
-  .jr.flex-row .jr.col-11 {
+  .jr.flex-l-row .jr.col-l-11 {
     width: 91.66666%;
   }
 
-  .jr.flex-row .jr.col-115 {
+  .jr.flex-l-row .jr.col-l-115 {
     width: 95.83333%;
   }
 
-  .jr.flex-row .jr.col-12 {
+  .jr.flex-l-row .jr.col-l-12 {
     width: 100%;
   }
 
