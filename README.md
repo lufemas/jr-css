@@ -11,7 +11,7 @@ A lightweight css framework
 
 ### Download
 
-- jr.css : https://lufemas.github.io/jr-css/jr.css/jr.css/jr.css
+- jr.css : https://lufemas.github.io/jr-css/jr.css/jr.css
 - Minified jr-min.css : https://lufemas.github.io/jr-css/jr.css/jr-min.css 
 - Source : https://lufemas.github.io/jr-css/jr.css/jr.scss  
 
