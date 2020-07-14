@@ -2,7 +2,7 @@
 
 # JR.css
 
-A lightweight css framework
+A lightweight responsive css framework
 
 - Documentation here: https://lufemas.github.io/jr-css  (in progress)
 
