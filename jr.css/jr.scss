@@ -144,7 +144,7 @@ $breakpoints: (s: 0px, m: 720px, l: 1024px);
       text-align: center;
     }
     
-    @for $i from 0 to 20 {
+    @for $i from 0 to 21 {
     
       @if($key == s) {
         .jr.h#{$mod}#{$i*5}{height: #{$i*5%};}
@@ -157,6 +157,10 @@ $breakpoints: (s: 0px, m: 720px, l: 1024px);
     
     .jr.w#{$mod}-auto, .jr.col-auto{
       width: auto;
+    }
+
+    .jr.h#{$mod}-auto{
+      height: auto;
     }
     
     .jr.flex#{$mod}-row{
