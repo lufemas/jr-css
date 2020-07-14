@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="jr.css/jr.css">
+  <link rel="stylesheet" href="css/docs.css">
+  <title>JR.css</title>
+</head>
+<body>
+  <header class="jr text-center mt-2">
+    <img src="assets/img/jr.css.png" alt="JR css logo">
+  </header>
+
+  <main class="jr w60 m-auto">
+    <h2>How to use it?</h2>
+    <p><strong>CDN:</strong> https://cdn.jsdelivr.net/gh/lufemas/jr-css/jr.css/jr-min.css</p>
+    <p><strong>Download:</strong> <a class="jr button link-raw" target="_blank" href="./jr.css/jr.css"> JR.css</a> <a class="jr button link-raw" target="_blank" href="./jr.css/jr-min.css"> JR.css minified</a> <a class="jr button link-raw" target="_blank" href="./jr.css/jr.scss"> JR.css Source (Sass)</a></p>
+
+    <section>
+      <h2>How it works?</h2>
+       <p>Every element that will use JR.css styling needs to have the <code>jr</code> class name</p>
+      <h2>Flex Grid</h2>
+      <p>Twelve columns and fractions.</p>
+      <div class="jr p-05 flex-row w100 m-auto flex-wrap between">
+        <div class="jr col colDebug text-center pt-05 pb-05"><code>FULL</code></div>
+
+        <div class="jr col-05 mt-15 colDebug text-center pt-05 pb-05"><code>HALF</code></div>
+        <div class="jr col-05 mt-15 colDebug text-center pt-05 pb-05"><code>HALF</code></div>
+        <div class="jr col-11 mt-15 colDebug text-center pt-05 pb-05"><code>ELEVEN</code></div>
+
+        <div class="jr col-1 mt-15 colDebug text-center pt-05 pb-05"><code>ONE</code></div>
+        <div class="jr col-11 mt-15 colDebug text-center pt-05 pb-05"><code>ELEVEN</code></div>
+        
+        <div class="jr col-2 mt-15 colDebug text-center pt-05 pb-05"><code>TWO</code></div>
+        <div class="jr col-10 mt-15 colDebug text-center pt-05 pb-05"><code>TEN</code></div>
+
+        <div class="jr col-15 mt-15 colDebug text-center pt-05 pb-05"><code>ONE and HALF</code></div>
+        <div class="jr col-25 mt-15 colDebug text-center pt-05 pb-05"><code>TWO and HALF</code></div>
+        <div class="jr col-8 mt-15 colDebug text-center pt-05 pb-05"><code>EIGHT</code></div>
+
+
+        <div class="jr col-3 mt-15 colDebug text-center pt-05 pb-05"><code>THREE</code></div>
+        <div class="jr col-9 mt-15 colDebug text-center pt-05 pb-05"><code>NINE</code></div>
+
+        <div class="jr col-4 mt-15 colDebug text-center pt-05 pb-05"><code>FOUR</code></div>
+        <div class="jr col-8 mt-15 colDebug text-center pt-05 pb-05"><code>EIGHT</code></div>
+
+        <div class="jr col-5 mt-15 colDebug text-center pt-05 pb-05"><code>FIVE</code></div>
+        <div class="jr col-7 mt-15 colDebug text-center pt-05 pb-05"><code>SEVEN</code></div>
+
+        <div class="jr col-6 mt-15 colDebug text-center pt-05 pb-05"><code>SIX</code></div>
+				<div class="jr col-6 mt-15 colDebug text-center pt-05 pb-05"><code>SIX</code></div>
+				
+        <div class="jr col-12 mt-15 colDebug text-center pt-05 pb-05"><code>TWELVE</code></div>
+
+      </div>
+
+        <h3>Code:</h3>
+        <div class=" card jr mt-2 p-2 pb-1">
+          <pre>
+          &lt;div class="jr col"> &lt;code>FULL&lt;/code> &lt;/div>
+
+
+          &lt;div class="jr col-05"> &lt;code>1/2&lt;/code> &lt;/div>
+          &lt;div class="jr col-05"> &lt;code>1/2&lt;/code> &lt;/div>
+          &lt;div class="jr col-11"> &lt;code>ELEVEN&lt;/code> &lt;/div>
+  
+          &lt;div class="jr col-1"> &lt;code>ONE&lt;/code> &lt;/div>
+          &lt;div class="jr col-11"> &lt;code>ELEVEN&lt;/code> &lt;/div>
+          
+          &lt;div class="jr col-2"> &lt;code>TWO&lt;/code> &lt;/div>
+          &lt;div class="jr col-10"> &lt;code>TEN&lt;/code> &lt;/div>
+  
+          &lt;div class="jr col-3"> &lt;code>THREE&lt;/code> &lt;/div>
+          &lt;div class="jr col-9"> &lt;code>NINE&lt;/code> &lt;/div>
+  
+          &lt;div class="jr col-4"> &lt;code>FOUR&lt;/code> &lt;/div>
+          &lt;div class="jr col-8"> &lt;code>EIGHT&lt;/code> &lt;/div>
+  
+          &lt;div class="jr col-5"> &lt;code>FIVE&lt;/code> &lt;/div>
+          &lt;div class="jr col-7"> &lt;code>SEVEN&lt;/code> &lt;/div>
+  
+          &lt;div class="jr col-6"> &lt;code>SIX&lt;/code> &lt;/div>
+          &lt;div class="jr col-6"> &lt;code>SIX&lt;/code> &lt;/div>
+  
+          &lt;div class="jr col-12"> &lt;code>TWELVE&lt;/code> &lt;/div>
+          </pre>
+      </div>
+
+      <p class="jr mt-2 i-block">Positioning with: <code>.between</code>, <code>.evenly</code>, <code>.around</code> </p>
+      <div class="jr p-05 flex-row w100 m-auto flex-wrap between">
+
+        <div class="jr col-2 mt-15 colDebug text-center pt-05 pb-05"><code>TWO</code></div>
+        <div class="jr col-7 mt-15 text-center pt-05 pb-05" >BETWEEN</div>
+        <div class="jr col-1 mt-15 colDebug text-center pt-05 pb-05"><code>ONE</code></div>
+     
+      </div>
+
+      <div class="jr p-05 flex-row w100 m-auto flex-wrap around">
+
+        <div class="jr mt-15 text-center pt-05 pb-05" >AROUND</div>
+        <div class="jr col-2 mt-15 colDebug text-center pt-05 pb-05"><code>TWO</code></div>
+        <div class="jr mt-15 text-center pt-05 pb-05" >AROUND</div>
+        <div class="jr col-1 mt-15 colDebug text-center pt-05 pb-05"><code>ONE</code></div>
+        <div class="jr mt-15 text-center pt-05 pb-05" >AROUND</div>
+     
+      </div>
+
+      <div class="jr p-05 flex-row w100 m-auto flex-wrap evenly">
+
+        <div class="jr mt-15 text-center pt-05 pb-05" >EVENLY</div>
+        <div class="jr col-2 mt-15 colDebug text-center pt-05 pb-05"><code>TWO</code></div>
+        <div class="jr mt-15 text-center pt-05 pb-05" >EVENLY</div>
+        <div class="jr col-1 mt-15 colDebug text-center pt-05 pb-05"><code>ONE</code></div>
+        <div class="jr mt-15 text-center pt-05 pb-05" >EVENLY</div>
+     
+      </div>
+
+    </section>
+
+    <section>
+      <h2>Buttons</h2>
+      <p><code>.button</code>  and <code>.button-primary</code></p>
+      <div class="jr flex-row evenly" >
+        <button class="jr button">BUTTON</button>
+        <button class="jr button-primary">BUTTON PRIMARY</button>
+      </div>
+
+      <p>Colors can be customized by defining these variables at your main styling or diretcly at jr-main.css:</p>
+      <div class="card jr mt-2 p-2 pb-1" >
+        
+        <pre>
+          --jr-text-color: #222;
+  
+          --jr-btn-primary-color       : rgb(255, 255, 255);
+          --jr-btn-hover-primary-color : white;
+  
+          --jr-btn-primary-bg-color       : rgb(142, 62, 207);
+          --jr-btn-hover-primary-bg-color : rgb(110, 45, 163);
+  
+          --jr-btn-border-primary-color       : rgb(164, 93, 223);
+          --jr-btn-hover-border-primary-color : rgb(184, 112, 243);
+        </pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <p><code>.link-raw</code></p>
+      <ul class="jr">
+        <li> <a class="jr link-raw" href="#">Links</a></li>
+        <li> <a class="jr link-raw" href="#">With</a></li>
+        <li> <a class="jr link-raw" href="#">LINK-RAW</a></li>
+      </ul>
+
+    </section>
+
+    <section>
+      <h2>Cards</h2>
+      <p><code>.card</code></p>
+      <div class="jr p-2 mt-2 card">
+        <h4 class="jr mt-0">This is a card</h4>
+        <p>Use it with wisdom</p>
+      </div>
+
+      <div class="jr p-2 mt-2 card w60 flex-row around">
+        <div>
+          <p class="jr mt-0" >You can mix all</p>
+          <p class="jr mt-0" >the classes together.</p>
+        </div>
+        <div class="jr card p-2">
+          <p class="jr mt-0" >Even nested</p>
+          <p class="jr mt-0" >cards</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>Margin and Padding</h2>
+      <p><code></code></p>
+      
+      <div class="card jr mt-2 p-2 pb-1" >
+				
+				<p>To be documented...</p>
+
+				<ul class="jr list-raw">
+					<li><pre>m-1    = margin: 0 </pre></li>
+					<li><pre>mt-3   = margin-top: 3rem </pre></li>
+					<li><pre>mb-m-1 = margin-bottom: 1rem (Medium screens) </pre></li>
+					<li><pre>p-0    = padding: 0 </pre></li>
+					<li><pre>p-l-2  = padding-left: 2rem ( Large screens) </pre></li>
+					<li>.</li>
+					<li>.</li>
+					<li>.</li>
+				</ul>
+        
+
+    </section>
+
+    
+    <section>
+      <h2>Responsive</h2>
+      <p><code></code></p>
+      
+      <div class="card jr mt-2 p-2 pb-1" >
+
+				<p>To be documented...</p>
+        
+        <pre>
+					Modifiers:
+					-m : Medium screen, from 720px width
+					-l : Medium screen, from 1024px width
+					.
+					.
+					.
+        </pre>
+
+    </section>
+
+		<section>
+      <h2>Display Changing</h2>
+      <p><code></code></p>
+      
+      <div class="card jr mt-2 p-2 pb-1" >
+
+				<p>To be documented...</p>
+        
+				<ul class="jr list-raw">
+					<li><pre>.jr.none-m   = display: none ( Medium screens) </pre></li>
+					<li><pre>.jr.block   = display: block ( All or small screens) </pre></li>
+					<li><pre>.jr.inline-block-l   = display: inline-block ( Large screens) </pre></li>
+					<li>.</li>
+					<li>.</li>
+					<li>.</li>
+				</ul>
+
+		</section>
+		
+
+  </main>
+
+	<footer class="jr card mt-2">
+		<ul class="jr flex-col center p-0">
+			<li class="jr mt-05 text-center">This page uses <strong><a href="https://github.com/lufemas/jr-web-lib" target="_blank">JR.css</a></strong></li>
+			<li class="jr mt-05 text-center">Take a look on my other projects <strong><a href="https://github.com/lufemas" target="_blank">JR.Maschietto</a></strong></li>
+			<li class="jr mt-05 text-center">You can contact me on my web page <strong><a href="http://jrmaschietto.com" target="_blank">JRmaschietto.com</a></strong></li>
+		</ul>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{
+  background-color: #fff;
+}
+.cardBg{
+  background-color: rgb(214, 214, 214) !important;
+  border-radius: 5px;
+}
+
+.colDebug{
+  box-sizing: border-box;
+  background-color: rgb(240, 240, 240);
+  border: solid rgb(163, 163, 163) 1px;
+  border-radius: 5px;
+}
+
+.w60{
+  width: 60%;
+}
+
+pre{
+  font-family: monospace ;
+  font-size: 1rem;
+  white-space: pre-line;
+  font-weight: 600;
+}
+
+.i-block{
+  display: inline-block;
+}

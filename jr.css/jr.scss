@@ -1,0 +1,283 @@
+@use "sass:math";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@function zerofill($zeros,$n) {
+  
+  $nz: "";
+  
+  @for $i from 1 through $zeros{
+    $nz: $nz + "0"
+  }
+  
+  
+    @return #{str-slice($nz,0,($zeros - str-length(#{$n})))+$n};
+}
+
+*{
+
+  /* box-sizing: border-box; */
+--jr-text-color: #222;
+
+--jr-btn-primary-color       : rgb(255, 255, 255);
+--jr-btn-hover-primary-color : white;
+
+--jr-btn-primary-bg-color       : rgb(142, 62, 207);
+--jr-btn-hover-primary-bg-color : rgb(110, 45, 163);
+
+--jr-btn-border-primary-color       : rgb(164, 93, 223);
+--jr-btn-hover-border-primary-color : rgb(184, 112, 243);
+
+
+}
+
+html{
+  font-family: 'IBM Plex Sans', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.jr.button{
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #444;
+  font-family: inherit;
+  padding: .75rem 1.25rem;
+  margin: auto;
+  background-color: white;
+  border: solid 1px #999;
+  border-radius: .25rem;
+}
+
+
+.jr.button:hover{
+  color: #222;
+  background-color: white;
+  border-color: #555;
+}
+
+.jr.button-primary{
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--jr-btn-primary-color);
+  font-family: inherit;
+  padding: .75rem 1.25rem;
+  margin: auto;
+  background-color: var(--jr-btn-primary-bg-color);
+  border: solid 1px var(--jr-btn-border-primary-color);
+  border-radius: .25rem;
+}
+
+
+.jr.button-primary:hover{
+  color: var(--jr-btn-hover-primary-color);
+  background-color: var(--jr-btn-primary-bg-color);
+  background-color: var(--jr-btn-hover-primary-bg-color);
+  border-color: var(--jr-btn-hover-border-primary-color);
+}
+
+input.jr{
+  color: #222;
+  font-family: inherit;
+  padding: .5rem .5rem;
+  background-color: white;
+  border: solid 1px #bbb;
+  border-radius: .25rem;
+  margin-bottom: 1.25rem;
+}
+
+label.jr{
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: .3rem;
+}
+
+input.jr + small.jr{
+  margin-top:  -1rem;
+  margin-bottom: 1.25rem;
+}
+
+$breakpoints: (s: 0px, m: 720px, l: 1024px);
+
+@each $key, $bkpt in $breakpoints {
+  // .#{$color}-text {color: $color;}
+  
+  $mod: -#{$key};
+
+  
+  @if $key == s {
+    $mod: null ;
+  } 
+
+  @media (min-width: $bkpt) {
+   
+    .jr.mp#{$mod}-0{
+      margin: 0;
+      padding: 0;
+    }
+    
+    .jr.list#{$mod}-raw{
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .jr.link#{$mod}-raw{
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    
+    .jr.link#{$mod}-raw:hover{
+      color: inherit;
+      text-decoration: underline;
+    }
+    
+    .jr.text#{$mod}-center{
+      text-align: center;
+    }
+    
+    @for $i from 0 to 20 {
+    
+      @if($key == s) {
+        .jr.h#{$mod}#{$i*5}{height: #{$i*5%};}
+        .jr.w#{$mod}#{$i*5}{width: #{$i*5%};}
+      } @else{
+        .jr.h#{$mod}-#{$i*5}{height: #{$i*5%};}
+        .jr.w#{$mod}-#{$i*5}{width: #{$i*5%};}
+      }
+    }
+    
+    .jr.w#{$mod}-auto, .jr.col-auto{
+      width: auto;
+    }
+    
+    .jr.flex#{$mod}-row{
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    
+    .jr.flex#{$mod}-col{
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+    
+    .jr.flex#{$mod}-wrap{
+      flex-wrap: wrap; 
+    }
+    
+    /* USE WITH flex-row or flex-col */
+    .jr.between#{$mod}  {  justify-content: space-between;}
+    .jr.evenly#{$mod}   {  justify-content: space-evenly;}
+    .jr.around#{$mod}   {  justify-content: space-around;}
+    .jr.center#{$mod}   {  justify-content: center;}
+    .jr.flex-end#{$mod} {  justify-content: flex-end;}
+    
+    .jr.flex#{$mod}-row .jr.col#{$mod}{  width: 100%;}
+    .jr.flex-col.center{  align-items: center;}
+    
+    @for $i from 0 to 13 {
+      .jr.flex#{$mod}-grow-#{$i}{flex-grow: #{$i};}
+    }
+    
+    //flex-row
+    @for $i from 1 to 25 {
+
+      $label: '';
+ 
+      @if ($i*5 % 2 == 0) {
+        $label: $i*5/10;
+      } @else if($i*5 < 10){
+        $label: zerofill(2,$i*5);
+      } @else{
+        $label: $i*5;
+      }
+
+      .jr.flex-row .jr.col-#{$label} {width: math.floor(($i*5%/1.2)*math.pow(10,5))/math.pow(10,5);}
+    }    
+    
+    .jr.card#{$mod}{
+      margin: auto;
+      background-color: white;
+      border: solid 1px #ddd;
+      border-radius: .25rem;
+      box-shadow: rgba(0, 0, 0, 0.349) .05rem .1rem .15rem;
+    }
+    
+    .jr.center-modal#{$mod}{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    
+    .jr.modal-bg#{$mod}{
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgba(82, 82, 82, 0.226);
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .jr.m#{$mod}-auto  { margin: auto !important;}
+    .jr.mh#{$mod}-auto { margin-left: auto !important; margin-right: auto !important;}
+
+    $props: (m: margin, p: padding);
+
+    @each $propKey, $prop in $props{
+
+      
+      @for $i from 0 to 7 {
+     
+        $label: '';
+  
+        @if ($i*5 % 2 == 0) {
+          $label: $i*5/10;
+        } @else if($i*5 < 10){
+          $label: zerofill(2,$i*5);
+        } @else{
+          $label: $i*5;
+        }
+  
+        .jr.#{$propKey}#{$mod}-#{$label} {#{$prop}: $i*5rem/10;}
+  
+        $sides: (t: -top, r: -right, b: -bottom, l:-left);
+  
+        @each $key, $side in $sides {
+    
+         .jr.#{$propKey}#{$key}#{$mod}-#{$label} {#{$prop}#{$side}: $i*5rem/10;}
+    
+        }
+  
+      }    
+
+    }
+
+
+  .jr.m#{$mod}-collapse{webkit-margin-collapse: collapse}
+  .jr.img#{$mod}{ width: 100%;}
+
+  .jr.none#{$mod}{display: none;}
+  .jr.inline#{$mod}{display: inline;}
+  .jr.block#{$mod}{display: block;}
+  .jr.inline-block#{$mod}{display: inline-block;}
+
+  .jr.mockup.bg{background-color: gray;}
+  .jr.mockup.border{
+    border: black 1px solid;
+    box-sizing: border-box;
+  }
+
+  }
+
+
+}
