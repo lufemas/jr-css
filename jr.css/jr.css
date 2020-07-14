@@ -83,6 +83,15 @@ input.jr + small.jr {
   margin-bottom: 1.25rem;
 }
 
+.jr.text-v-center::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+  /* Adjusts for spacing */
+}
+
 @media (min-width: 0px) {
   .jr.mp-0 {
     margin: 0;
