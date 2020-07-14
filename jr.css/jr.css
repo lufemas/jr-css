@@ -295,6 +295,7 @@ input.jr + small.jr {
 
   .jr.flex-row {
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
   }
 
@@ -1034,6 +1035,7 @@ input.jr + small.jr {
 
   .jr.flex-m-row {
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
   }
 
@@ -1773,6 +1775,7 @@ input.jr + small.jr {
 
   .jr.flex-l-row {
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
   }
 
